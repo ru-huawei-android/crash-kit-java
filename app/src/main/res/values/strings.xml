@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CrashKit(Java)</string>
+    <string name="crash_world_with_npe">Crash world With NPE</string>
+    <string name="crash_world_with_arithme">Crash world With Arithmetic Ex</string>
+</resources>
