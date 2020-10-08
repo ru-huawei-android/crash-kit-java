@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-        applicationId "com.sample.huawei.crashkitjava"
+        applicationId "com.sample.huawei.crash"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
@@ -17,10 +17,10 @@ android {
         //  Однако если вы хотите избежать возможности кросс-обновлений из 2х магазинов,
         //  лучше создать новый сертификат и подписать им
         release {
-            storeFile file("huaweisamplekey.store")
-            storePassword "huawei"
-            keyAlias "huaweisample"
-            keyPassword "huawei"
+            storeFile file("HuaweiSampleKey.jks")
+            storePassword "HuaweiSampleKey"
+            keyAlias "HuaweiSampleKey"
+            keyPassword "HuaweiSampleKey"
             v1SigningEnabled true
             v2SigningEnabled true
         }

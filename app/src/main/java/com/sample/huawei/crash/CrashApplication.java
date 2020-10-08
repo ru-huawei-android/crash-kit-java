@@ -1,4 +1,4 @@
-package com.sample.huawei.crashkitjava;
+package com.sample.huawei.crash;
 
 import android.app.Application;
 import com.huawei.agconnect.crash.internal.AGConnectCrashHandler;
@@ -11,7 +11,8 @@ public class CrashApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        YandexMetricaConfig config = YandexMetricaConfig.newConfigBuilder("YOUR_API_KEY").build();
+        // Change test api_key to yours key if needed
+        YandexMetricaConfig config = YandexMetricaConfig.newConfigBuilder("b47641f9-8847-480d-8189-4d2b26d162d2").build();
         YandexMetrica.activate(getApplicationContext(), config);
         YandexMetrica.enableActivityAutoTracking(this);
 
